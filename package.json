@@ -1,9 +1,9 @@
 {
   "name": "pseudo-styled-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "styled-system that adds pseudo props to existing systems",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/pseudoizeSystem.js",
+  "types": "dist/pseudoizeSystem.d.ts",
   "repository": "https://github.com/dan-dr/pseudo-styled-system",
   "author": "Dan Rosenshain",
   "license": "MIT",
