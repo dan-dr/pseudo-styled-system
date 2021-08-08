@@ -17,10 +17,10 @@ type PseudoColorProps = PseudoizedSystem<ColorProps, ':hover'>;
 const pseudoBorder = pseudoizeSystem(system({ borderColor: true }), [':hover', ':focus']);
 type PseudoBorderProps = PseudoizedSystem<BorderProps, ':hover' | ':focus'>;
 
-// component
-const Component = styled.div`
+// styled-components component
+const Component = styled.div(
  compose(color, pseudoColor, pseudoBorder)
-`
+)
 
 <Component hoverColor="colorFromTheme" focusBorderColor="red" />
 ```
