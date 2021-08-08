@@ -8,7 +8,7 @@ Takes a [styled-system](https://styled-system.com/) and returns the same system 
 
 ```tsx
 import { pseudoizeSystem, PseudoizedSystem } from 'pseudo-styled-system'
-import { color, ColorProps } from 'styled-system'
+import { color, ColorProps, system } from 'styled-system'
 
 const pseudoColor = pseudoizeSystem(color, ':hover');
 type PseudoColorProps = PseudoizedSystem<ColorProps, ':hover'>;
@@ -25,7 +25,6 @@ const Component = styled.div`
 ```
 
 ## Notes
--
 - The resulting props are prefixed with the pseudo selector. e.g. `:hover = hover` `:first-child = firstChild`
 - You need to compose the system yourself. Does not return a composed system, but a new system without the original props. 
 - You should only add styling pseudo props (start with `:`) and not elements (start with `::`)
