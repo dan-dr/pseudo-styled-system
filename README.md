@@ -7,8 +7,9 @@ Takes a [styled-system](https://styled-system.com/) and returns the same system 
 ## Example
 
 ```tsx
+// pseudoSystems.ts
 import { pseudoizeSystem, PseudoizedSystem } from 'pseudo-styled-system'
-import { color, ColorProps, system } from 'styled-system'
+import { BorderProps, color, ColorProps, system } from 'styled-system'
 
 const pseudoColor = pseudoizeSystem(color, ':hover');
 type PseudoColorProps = PseudoizedSystem<ColorProps, ':hover'>;
